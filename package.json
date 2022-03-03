@@ -6,7 +6,10 @@
   "author": "Cauã Kath <cauakathdev@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "nodemon src/server.js"
+    "start": "nodemon src/server.js",
+    "dropDb": "sequelize db:drop",
+    "createDb": "sequelize db:create",
+    "migrateDb": "sequelize db:migrate"
   },
   "dependencies": {
     "express": "^4.17.3",
