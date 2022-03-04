@@ -6,10 +6,9 @@ class Usuario extends Model {
       nome: DataTypes.STRING,
       email: DataTypes.STRING,
       senha: DataTypes.STRING,
-      cargo_nome: DataTypes.STRING,
     }, {
       sequelize,
-      tableName: 'usuarios'
+      tableName: 'usuarios',
     });
   };
 
@@ -24,7 +23,7 @@ class Usuario extends Model {
       foreignKey: 'usuario_id',
       as: 'usuarios'
     });
-  }
+  };
 };
 
 module.exports = Usuario;
